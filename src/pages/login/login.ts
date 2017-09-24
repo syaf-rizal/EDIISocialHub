@@ -51,9 +51,9 @@ export class LoginPage {
           this.attrUser = data.json();
           this.authUser.social      = btoa(this.authUser.id);
           this.authUser.email       = this.attrUser.email;
-          this.authUser.name        = this.attrUser.name;
+          this.authUser.name        = this.attrUser.first_name;
           this.authUser.last_name   = this.attrUser.last_name;
-          this.authUser.avatar      = this.attrUser.avatar;
+          this.authUser.avatar      = (this.attrUser.avatar == null ? 'assets/img/avatar.png' : this.attrUser.avatar);
           this.authUser.activated   = (this.attrUser.activated === 1 ? true : false);
           window.localStorage.setItem('schSess', JSON.stringify(this.authUser));
           this.navCtrl.push("HomePage");
