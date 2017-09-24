@@ -33,6 +33,10 @@ export class SharetimelinePage {
       position: 'bottom'
     });
     toast.present();
+    if(this.imagePreview != null)
+    {
+      this.obj.timelines_photo = this.imagePreview;
+    }
     this.responseShare = {};
     this.restService.putData('api/v1/timelinePut', this.obj).then((result) => {
       this.responseShare = result;
