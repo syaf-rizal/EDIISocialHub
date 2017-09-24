@@ -1,0 +1,33 @@
+page-timeline {
+  .content-md {
+    background: #f5f5f5 !important;
+  }
+  .item-md {
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 10px;
+      color: #777777;
+    }
+  }
+  .card-md {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #cccccc !important;
+    margin: 0px 0px 5px 0px;
+    width: 100%;
+  }
+  .card-content-md {
+    font-size: 12px;
+    padding: 5px 16px 13px 16px !important;
+    img {
+      padding-top: 10px;
+    }
+  }
+  div.label-button-bottom {
+    text-transform: none;
+    font-size: 11px;
+  }
+}

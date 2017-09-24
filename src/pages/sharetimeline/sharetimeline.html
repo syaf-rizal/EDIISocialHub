@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only color="royal" (click)="closeTimeline()">
+        <ion-icon name="close" md="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center style="font-size: 14px !important;">What's happening ... </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="shareTimeline()"><ion-icon ios="ios-share" md="md-share"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item>
+    <ion-textarea fz-elastic placeholder="What are you up to" [(ngModel)]="obj.timelines_story"></ion-textarea>
+  </ion-item>
+  <img [src]="previewPhoto" class="slider-img">
+  <ion-item>
+    <button ion-button icon-only clear small (click)="sharePhoto()">
+      <ion-icon name="camera" md="md-camera"></ion-icon>
+    </button>
+  </ion-item>
+</ion-content>

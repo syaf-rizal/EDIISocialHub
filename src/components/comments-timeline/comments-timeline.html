@@ -1,0 +1,26 @@
+<ion-content padding>
+  <button ion-button outline icon-only small clear color="light-grey" class="button-top" (click)="closeComment()">
+    <ion-icon name="close" md="md-close"></ion-icon>
+  </button>
+  <ion-list *ngFor="let comment of comments">
+    <ion-item>
+      <p><span class="comment-user">{{ comment.sch_comments_user_name }}</span> <span class="comment-reply">{{ comment.sch_comments_reply }}</span></p>
+      <p class="comment-moment">{{ comment.created_at}}</p>
+    </ion-item>
+  </ion-list>
+  <div class="separator"></div>
+  <div class="panel-comment">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-11>
+          <ion-textarea fz-elastic placeholder="Comments" [(ngModel)]="obj.sch_comments_reply" style="max-height: 350px; overflow: scroll;"></ion-textarea>
+        </ion-col>
+        <ion-col col-1>
+          <button ion-button outline icon-only small clear style="bottom: 0px; position: absolute;" color="light-grey" (click)="sendComment()">
+            <ion-icon name="send" md="md-send"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

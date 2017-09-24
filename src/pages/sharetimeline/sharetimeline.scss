@@ -1,0 +1,14 @@
+page-sharetimeline {
+  ion-textarea {
+    font-size: 13px;
+  }
+  .item-md {
+    padding-left:0 !important;
+    .item-inner {
+      border-bottom: none !important;
+    }
+  }
+  .slider-img {
+    width: 100%;
+  }
+}

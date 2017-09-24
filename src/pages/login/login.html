@@ -1,0 +1,34 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex' : 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/img/Social-Hub-Logo-tsa-blue-500x213-1.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+<ion-content class="loginPage">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/img/Logo EDII wMember Flat.png" class="logoHeader">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item>
+          <ion-input type="text" placeholder="Email" [(ngModel)] = 'obj.email'></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password" [(ngModel)] = 'obj.password'></ion-input>
+        </ion-item>
+      </ion-list>
+      <a>Forgot your login details? <b>Get help signing in</b></a>
+      <button ion-button block outline color="ediicustom" (click)="userAuth()">Log In</button>
+      <p>OR</p>
+      <button ion-button block color="danger" (click)="googlePlusAuth()">
+        <ion-icon name="logo-google"></ion-icon> Login With Google
+      </button>
+      <button ion-button block color="fbcustom" (click)="facebookAuth()">
+        <ion-icon name="logo-facebook"></ion-icon> Login With Facebook
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button clear full color="light" style="text-transform: none; font-size: 11px;">Don't have an account? Sign Up</button>
+</ion-content>

@@ -1,0 +1,71 @@
+comments-timeline {
+  p {
+    font-size: 12px;
+  }
+  ion-textarea {
+    font-size: 12px;
+  }
+  ion-label {
+    white-space: normal;
+  }
+  .list-md {
+    border-bottom: 1px solid #f5f5f5;
+    margin: 0px;
+  }
+  .list > .list-md:last-child {
+    margin-bottom: 25px !important;
+    background-color: #32db64;
+  }
+  .item-md {
+    padding-left:0 !important;
+    .item-inner {
+      border-bottom: none !important;
+      padding-right: 0px !important;
+    }
+    p {
+      font-size: 12px;
+    }
+    margin: 5px 0px 5px 0px;
+  }
+  .text-input-md {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+  .label-md {
+    margin: 0px 2px 4px 2px !important;
+  }
+  .col {
+    padding: 5px 0px 0px 0px !important;
+  }
+  .button-top {
+    top: 0px;
+    position: fixed;
+    right: 0px;
+    z-index: 999;
+  }
+  .panel-comment {
+    margin-top: 10px !important;
+    border-top: 1px solid #f5f5f5;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 100%;
+  }
+  .comment-user {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .comment-reply {
+    font-size: 12px;
+    color: #424242;
+  }
+  .comment-moment {
+    color: #ccc;
+    font-size: 11px !important;
+  }
+  .separator {
+    margin: 75px;
+  }
+}
